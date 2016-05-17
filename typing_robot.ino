@@ -8,8 +8,11 @@
 //OBJECT CREATION
 //--------------------------------------//
 Servo servo1;               //BASE SERVO (Non-Continuous)
+int servo1_pin=9;           //SET PIN NUMBER
 Servo servo2;               //ONE AFTER BASE SERVO (Non-Continuous)
+int servo2_pin=10;          //SET PIN NUMBER
 Servo servo3;               //TOP-MOST SERVO (Non-Continuous)
+int servo3_pin=11;          //SET PIN NUMBER
 //--------------------------------------//
 
 //--------------------------------------//
@@ -49,9 +52,9 @@ const int HALF_MAX_DELAY=500;
 //--------------------------------------//
 void setup() {
   //SERVOS
-  servo1.attach(9);
-  servo2.attach(10);
-  servo3.attach(11);
+  servo1.attach(servo1_pin);
+  servo2.attach(servo2_pin);
+  servo3.attach(servo3_pin);
 
   //BLUETOOTH
   Serial.begin(9600); //set baud rate
