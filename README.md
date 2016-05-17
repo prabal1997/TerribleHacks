@@ -6,3 +6,6 @@ Open the file in Arduino IDE, and change the pin number assignments "OBJECT CREA
 
 # Compatibility
 This program was designed to be used on Arduino Uno.
+
+# Credit
+Thanks to Daniel Weisberg and Steven Liu for letting me use their expertise and tools.
